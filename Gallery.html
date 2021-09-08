@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snaphut Home</title> 
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="icon" type="image/png" href="images/logo.png"/> 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+ <!-- Font awesome  -->
+<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<!-- bootstrap link -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://kit.fontawesome.com/42a74ef145.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+*{
+  font-family: 'Lato', sans-serif;
+    font-size: 0.99em;
+}
+
+html{
+    overflow-x: hidden;
+}
+body{
+ background-image:url(images/background\ img.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+*:focus {
+    outline: none;
+}
+
+
+/*NavBar Starts*/
+   .navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: white;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: white;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #333;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #5777BA;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+	.com{
+    	color: #5777BA;
+    }
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+      background: rgba(0, 0, 0, 0.5);
+        color: #333;
+    }
+    .com{
+    	color: #418DC9;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+
+.navbar-toggler{
+	color:  #fff;
+}
+.navbar .nav-link {
+    color: #fff;
+    
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+.navbar.active .navbar-brand {
+    color: #333;
+}
+.navbar.active .navbar-toggler {
+    color: #333;
+}
+}
+.ser{
+  margin-top: -5px;
+}
+.drop .dropdown{
+  color: black;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-item{
+color: white;
+}
+/*NavBar Ends*/
+	</style>
+</head>
+
+ <!-- preloader css start here -->
+ <style type="text/css">
+
+  * {box-sizing: border-box;}
+  
+  @font-face {
+      font-family: Montserrat-Thin;
+      src: url(Montserrat-Thin.ttf);
+    }
+  .hello{
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      padding-top: 15%;
+  }
+  .wellcome{
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      font-weight: 800;
+      font-size: medium;
+  }
+  
+  body{
+      margin:0;
+      padding: 0;    
+  }
+  .preload{
+      width: 100%;
+      height: 100%;
+      background: rgb(255, 255, 255);
+      position: fixed;
+      top: 0;
+      padding-top: 90px;
+      left: 0;
+      z-index: 1;
+  }
+  
+  
+  .loader-frame{
+      width: 250px;
+      height: 250px;
+      margin: auto;
+      margin-top: 10%;
+      position: relative;
+  }
+  
+  .circle{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    background-color: white 0%;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .loader1{
+      position: absolute;
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      border-top: 5px solid rgb(70, 70, 70);
+      border-bottom: 5px solid rgb(80, 80, 80);
+      animation: clockwisespin 5s linear 3;
+  }
+  
+  @keyframes clockwisespin{
+      from{transform: rotate(0deg);}
+      to{transform: rotate(360deg);}
+  }
+  
+  
+  @keyframes fadeout{
+      from{opacity: 1;}
+      to{opacity: 0;}
+  }
+  @keyframes fadein{
+      from{opacity: 0;}
+      to{opacity: 1;}
+  }
+          </style>
+          
+          <body onload="myFunction()">
+      
+              <div class="preload" id="preload">
+                  <div class="logo">
+                  </div>
+                  <div class="loader-frame">
+                      <div class="loader1" id="loader1">
+                      </div>
+                      <div class="circle"></div>
+                      <h1 class="hello">Wellcome to</h1>
+                      <h5 class="wellcome">snaphutcapturingmoments</h5>
+                  </div>
+              </div>
+          
+
+<section style="background-color: #0077BD;">
+	<!-- Navbar -->
+ <header class="header ">
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container"><a href="index.html" class="navbar-brand text-uppercase font-weight-bold "><img src="images/logo1.jpg" alt="" height="50px" width="50px"></a>
+         <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse  ">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link text-uppercase ">Home <span class="sr-only"></span></a></li>
+                  
+                    <li class="nav-item active"><a href="About.html" class="nav-link text-uppercase ">About <span class="sr-only"></span></a></li>
+                  
+                   
+                    <div class="btn-group drop ">
+                      <li class=" ser btn dropdown-toggle nav-link text-uppercase  " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PHOTOGRAPHY
+                      </li>
+                      <div class="dropdown-menu dropdown">
+                        <a class="dropdown-item " href="services1.html">WEDDING PHOTOGRAPHY</a>
+                        <a class="dropdown-item " href="services2.html">PRE-WEDDING SHOOT</a>
+                        <a class="dropdown-item " href="services3.html">PORTFOLIO SHOOT</a>
+                        <a class="dropdown-item " href="services4.html">EVENT SHOOT</a>
+                        <a class="dropdown-item " href="services5.html">BABY SHOOT</a>
+                    </div>
+                    </div>
+
+                    <li class="nav-item active"><a href="Gallery.html" class="nav-link text-uppercase ">Services <span class="sr-only"></span></a></li>
+                  
+                    <li class="nav-item active"><a href="Films.html" class="nav-link text-uppercase ">Films <span class="sr-only"></span></a></li>
+                  
+                    <li class="nav-item active"><a href="contact.html" class="nav-link text-uppercase ">contact Us <span class="sr-only"></span></a></li>
+                  
+                </ul>
+            </div>
+        </div>
+    </nav> 
+ </header>  
+
+  <!-- Navbar -->
+
+</section>
+
+<style type="text/css">
+	
+
+
+/* slider css */
+body{
+  margin: 0;
+}
+
+h1{
+  color:#fff;
+}
+
+.bg-opacity{
+    position: relative;
+    background-color: #000;
+}
+
+.bg-opacity::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.5;
+    background:       url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center;
+    background-size: cover;
+}
+
+.content{
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.serve{
+   padding-top: 200px; 
+}
+.ind a{
+text-decoration: none;
+  color: rgb(245, 2, 2);
+}
+</style>
+
+<div class="bg-opacity">
+    <div class="content">
+      <h2 class="text-center text-white serve"><span class="ind"><a href="index.html">Home</a></span>\Services</h2>
+    </div>
+  </div>
+<br>
+<br>
+
+
+<style type="text/css">
+
+	
+</style>
+
+
+</style>
+<section style="background-color: #202125;">
+	<img src="images/ic_circles.png" width="250" style="position: absolute; margin-top: 22px; right: 0px; opacity: 0.2; ">
+
+	<img src="images/ic_circles_gradient_reverse.png" width="200" style="position: absolute; left: 0px; margin-top: -30px;  opacity: 0.2; z-index: 1;">
+		</div> 
+</section>
+<!-- Request Demo email ends -->
+<style type="text/css">
+/* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+
+      .section-desktop {
+        display: none;
+      }
+
+      .section-mobile {
+        display: block;
+      }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px){
+
+      .section-desktop {
+        display: none;
+      }
+
+      .section-mobile {
+        display: block;
+      } 
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      .section-desktop {
+        display: none;
+      }
+
+      .section-mobile {
+        display: block;
+      }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+     
+      .section-desktop {
+        display: block;
+      }
+
+      .section-mobile {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+   
+      .section-desktop {
+        display: block;
+      }
+
+      .section-mobile {
+        display: none;
+      }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+     
+      .section-desktop {
+        display: block;
+      }
+
+      .section-mobile {
+        display: none;
+      }
+    }
+    
+</style>
+<style type="text/css">
+	.mobile-section-h3{
+    	color: #333;
+		font-weight: 600;
+    }
+    img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+</style>
+<!-- This section is only for mobile view, it will be hidden on desktop view -->
+<section class=" text-center">
+  <div class="container">
+      <div class="heading text-black" style="font-size: xx-large; font-weight: bold;">
+         Our Visions
+      </div>
+    </div>
+</section>
+<section class="section-mobile">
+	<br>
+	<br>
+	<div class="container">
+		<div class="row p-3">
+      <a href="services1.html">
+        <img src="images/agri.png" class="vert-move  img-fluid about-img" height="50%" width="50%" />
+    </a>
+				<!-- <h6 style="color: #5777BA;">ACQUIRE</h6> -->
+ 			<h4 class="mobile-section-h3">Integrity and Honesty</h4>
+     		<p style="color: #6D6E6A; font-size: 18px; " class="">We are always bound to our commitments to clients also it has become our agenda from past few years. Satisfication and happy client is what we want and what we work boyond the time to achieve the deadlines and goals to deliever the final output. </p>
+		</div>
+		<br>
+		<br>
+		<div class="row p-3">
+		  <img src="images/perception.png" class="vert-move  img-fluid about-img "height="50%" width="50% "/>
+			<!-- <h6 style="color: #5777BA;">Branding</h6> -->
+ 			<h4 class="mobile-section-h3">Quality over quantity</h4>
+     		<p style="color: #6D6E6A; font-size: 18px; " class="">
+          We are always bound to our commitments to clients also it has become our agenda from past few years. Satisfication and happy client is what we want and what we work boyond the time to achieve the deadlines and goals to deliever the final output.</p>
+			</p>
+		</div>
+	
+<br>
+<br>
+<div class="row p-3">
+  <img src="images/venn-diagram.png" class="vert-move  img-fluid about-img" height="50%" width="50%" />
+    <!-- <h6 style="color: #5777BA;">EVENT SHOOT</h6> -->
+   <h4 class="mobile-section-h3">Time is money</h4>
+     <p style="color: #6D6E6A; font-size: 18px; " class="">We are always bound to our commitments to clients also it has become our agenda from past few years. Satisfication and happy client is what we want and what we work boyond the time to achieve the deadlines and goals to deliever the final output.</p>
+</div>
+<br>
+<br>
+<div class="row p-3">
+  <img src="images/model.png" class="vert-move  img-fluid about-img" height="50%" width="50%" />
+  <!-- <h6 style="color: #5777BA;">MODEL PORTFOLIO SHOOT</h6> -->
+   <h4 class="mobile-section-h3">Our Commitments</h4>
+     <p style="color: #6D6E6A; font-size: 18px; " class="">
+   "We are always bound to our commitments to clients also it has become our agenda from past few years. Satisfication and happy client is what we want and what we work boyond the time to achieve the deadlines and goals to deliever the final output.".
+  </p>
+</div>
+<br>
+<br>
+	</div>
+</section>
+<!-- The immidiate  above section will be hidden on desktop view -->
+
+<!-- The immidiate below section will be visible in desktop view -->
+
+
+<style type="text/css">
+    .about-img{
+
+    }
+     .desktop-section-h3{
+    	color: #333;
+		font-weight: 600;
+    }
+    .section-desktop-text{
+    	margin: auto;
+    }
+</style>
+
+
+<style type="text/css">
+
+	.manage-table{
+		width:100%; 
+		color: #333;
+	}
+</style>
+
+<section class="section-desktop p-5">
+    <div class="container">
+<div class="row">
+    <div class="col-lg-7 col-xs-12">
+      <img src="images/agri.png" class="vert-move  img-fluid about-img" height="50%" width="50%" />
+    </div>
+    <div class="col-lg-5 col-xs-12 section-desktop-text" >
+    	<!-- <h6 style="color: #5777BA;">ACQUIRE</h6> -->
+        <h3 class="desktop-section-h3">Integrity and Honesty</h3>
+       <p style="color: #6D6E6A; font-size: 18px; " class="">We are always bound to our commitments to clients also it has become our agenda from past few years. Satisfication and happy client is what we want and what we work boyond the time to achieve the deadlines and goals to deliever the final output.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 col-xs-12 section-desktop-text" >
+    	<!-- <h6 style="color: #5777BA;">BRANDING</h6> -->
+         <h2 class="" style="color: #333333; font-size: 30px; font-weight: bold;">Quality over quantity</h2>
+        <p style="color: #6D6E6A; font-size: 18px; " class="">We are always bound to our commitments to clients also it has become our agenda from past few years. Satisfication and happy client is what we want and what we work boyond the time to achieve the deadlines and goals to deliever the final output.</p>
+    </div>
+    <div class="col-lg-6 col-xs-12" >
+        <img src="images/perception.png" class="vert-move  img-fluid about-img "height="50%" width="50% "/>
+    </div>
+ 
+</div>
+
+<div class="row">
+  <div class="col-lg-7 col-xs-12">
+    <img src="images/venn-diagram.png" class="vert-move  img-fluid about-img" height="50%" width="50%" />
+  </div>
+  <div class="col-lg-5 col-xs-12 section-desktop-text" >
+    <!-- <h6 style="color: #5777BA;">ACQUIRE</h6> -->
+      <h3 class="desktop-section-h3">Time is money</h3>
+     <p style="color: #6D6E6A; font-size: 18px; " class="">We are always bound to our commitments to clients also it has become our agenda from past few years. Satisfication and happy client is what we want and what we work boyond the time to achieve the deadlines and goals to deliever the final output.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6 col-xs-12 section-desktop-text" >
+    <!-- <h6 style="color: #5777BA;">BRANDING</h6> -->
+       <h2 class="" style="color: #333333; font-size: 30px; font-weight: bold;">Our Commitments</h2>
+      <p style="color: #6D6E6A; font-size: 18px; " class="">We are always bound to our commitments to clients also it has become our agenda from past few years. Satisfication and happy client is what we want and what we work boyond the time to achieve the deadlines and goals to deliever the final output.</p>
+  </div>
+  <div class="col-lg-6 col-xs-12" >
+     <img src="images/model.png" class="vert-move  img-fluid about-img" height="50%" width="50%" />
+  </div>
+
+</div>
+    </div>
+<br>
+<br>
+</section>
+<!-- card css end -->
+
+<style type="text/css">
+	.what-motivated-section{
+		background-color: #202125;
+
+	}
+	.what-motivated-section h2{
+		color: #FFFFFF;
+		font-weight: 900;
+	}
+
+  /* card section */
+  .card-1{
+   background-color: #202125 !important; 
+border: 2px solid white;
+padding: 20px;
+  }
+  
+  i{
+    font-size: xx-large;
+  }
+</style>
+
+<section class="what-motivated-section pt-5 pb-5">
+	
+	
+	<h2 class="text-center pb-5">How We will help you?</h2>
+	<div class="container">
+    <div class="row image mt-4 ">
+      <div class=" col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-3 bg-black">
+          <div class="card-1 ">
+            <div class="cardtext pt-3 text-center text-white" style="font-size: large;">
+              <div class="rounded-circle">
+                <img src="images/camera.png" alt="" height="60px" width="60px">
+            
+              <!-- <i class="fas fa-users"></i> -->
+              <p class="">Traditional Photography</p>
+            </div>
+          </div>
+      </div>
+    </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-3">
+          <div class="card-1">
+            <div class="cardtext pt-3 text-center text-white" style="font-size: large;">
+              <!-- <i class="fas fa-tasks"></i> -->
+              <div class="rounded-circle">
+                <img src="images/photo-editing.png" alt="" height="60px" width="60px">
+             
+              <p class="text-white">Photo-Editing</p>
+            </div>
+          </div>
+      </div>
+    </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-3 ">
+          <div class="card-1">
+            <div class="cardtext pt-3 text-center text-white" style="font-size: large;">
+              <!-- <i class="fas fa-globe"></i> -->
+              <div class="rounded-circle">
+                <img src="images/music.png" alt="" height="60px" width="60px">
+             
+              <p class="text-white">Live Screen</p>
+            </div>
+          </div>
+      </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-3 ">
+          <div class="">
+              <div class="card-1">
+            <div class="cardtext pt-3 text-center text-white" style="font-size: large;">
+              <!-- <i class="fas fa-paint-brush"></i> -->
+              <div class="rounded-circle">
+                <img src="images/agri.png" alt="" height="60px" width="60px">
+             
+              <p class="text-white">Drone Shoot</p>
+            </div>
+          </div>
+      </div>
+    </div>	
+	</div>
+    </div>
+  
+    <div class="row image mt-4 ">
+      <div class=" col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-3 bg-black">
+          <div class="card-1 ">
+            <div class="cardtext pt-3 text-center text-white" style="font-size: large;">
+              <div class="rounded-circle">
+                <img src="images/album.png" alt="" height="60px" width="60px">
+            
+              <!-- <i class="fas fa-users"></i> -->
+              <p class="">Album</p>
+            </div>
+          </div>
+      </div>
+    </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-3">
+          <div class="card-1">
+            <div class="cardtext pt-3 text-center text-white" style="font-size: large;">
+              <!-- <i class="fas fa-tasks"></i> -->
+              <div class="rounded-circle">
+                <img src="images/garland.png" alt="" height="60px" width="60px">
+             
+              <p class="text-white">Props</p>
+            </div>
+          </div>
+      </div>
+    </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-3 ">
+          <div class="card-1">
+            <div class="cardtext pt-3 text-center text-white" style="font-size: large;">
+              <!-- <i class="fas fa-globe"></i> -->
+              <div class="rounded-circle">
+                <img src="images/map.png" alt="" height="60px" width="60px">
+             
+              <p class="text-white">Map</p>
+            </div>
+          </div>
+      </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-3 ">
+          <div class="">
+              <div class="card-1">
+            <div class="cardtext pt-3 text-center text-white" style="font-size: large;">
+              <!-- <i class="fas fa-paint-brush"></i> -->
+              <div class="rounded-circle">
+                <img src="images/electronic-music.png" alt="" height="60px" width="60px">
+             
+              <p class="text-white">Live-Mixing</p>
+            </div>
+          </div>
+      </div>
+    </div>	
+	</div>
+    </div>
+
+    <div class="row image mt-4 ">
+      <div class=" col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-3 bg-black">
+          <div class="card-1 ">
+            <div class="cardtext pt-3 text-center text-white" style="font-size: large;">
+              <div class="rounded-circle">
+                <img src="images/wedding-couple.png" alt="" height="60px" width="60px">
+            
+              <!-- <i class="fas fa-users"></i> -->
+              <p class="">Poses</p>
+            </div>
+          </div>
+      </div>
+    </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-3">
+          <div class="card-1">
+            <div class="cardtext pt-3 text-center text-white" style="font-size: large;">
+              <!-- <i class="fas fa-tasks"></i> -->
+              <div class="rounded-circle">
+                <img src="images/drum-set.png" alt="" height="60px" width="60px">
+             
+              <p class="text-white">Studio-Shot</p>
+            </div>
+          </div>
+      </div>
+    </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-3 ">
+          <div class="card-1">
+            <div class="cardtext pt-3 text-center text-white" style="font-size: large;">
+              <!-- <i class="fas fa-globe"></i> -->
+              <div class="rounded-circle">
+                <img src="images/spotlight.png" alt="" height="60px" width="60px">
+             
+              <p class="text-white">Lights</p>
+            </div>
+          </div>
+      </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-3 ">
+          <div class="">
+              <div class="card-1">
+            <div class="cardtext pt-3 text-center text-white" style="font-size: large;">
+              <!-- <i class="fas fa-paint-brush"></i> -->
+              <div class="rounded-circle">
+                <img src="images/backdrop.png" alt="" height="60px" width="60px">
+             
+              <p class="text-white">Backdrops</p>
+            </div>
+          </div>
+      </div>
+    </div>	
+	</div>
+    </div>
+
+  </div>
+<img src="images/ic_circles_gradient_reverse.png" width="200" style="position: absolute; right: 0px;  opacity: 0.4">
+</section>
+<!-- Footer css start here -->
+<style type="text/css">
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .footer-section {
+  background: #151414;
+  position: relative;
+  }
+  .footer-cta {
+  border-bottom: 1px solid #373636;
+  }
+  .single-cta i {
+  color: rgb(239, 74, 74);
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+  }
+  .cta-text {
+  padding-left: 15px;
+  display: inline-block;
+  }
+  .cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  }
+  .cta-text span {
+  color: #757575;
+  font-size: 15px;
+  }
+  .footer-content {
+  position: relative;
+  z-index: 2;
+  }
+  .footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+  }
+  .footer-logo {
+  margin-bottom: 30px;
+  }
+  .footer-logo img {
+    max-width: 200px;
+  }
+  .footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+  }
+  .footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  }
+  .footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+  }
+  .footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  }
+  .facebook-bg{
+  background: #3B5998;
+  }
+  .twitter-bg{
+  background: #e42967;
+  }
+ 
+  .footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+  }
+  .footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: rgb(239, 74, 74);
+  }
+  .footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+  }
+  .footer-widget ul li a:hover{
+  color: rgb(239, 74, 74);
+  }
+  .footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+  }
+  .subscribe-form {
+  position: relative;
+  overflow: hidden;
+  }
+  .subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+  }
+  .subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: rgb(239, 74, 74);
+    padding: 13px 20px;
+    border: 1px solid rgb(239, 74, 74);
+    top: 0;
+  }
+  .subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+  }
+  .copyright-area{
+  background: #202020;
+  padding: 25px 0;
+  }
+  .copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+  }
+  .copyright-text p a{
+  color: rgb(239, 74, 74);
+  }
+  .footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+  }
+  .footer-menu li:hover a{
+  color: rgb(239, 74, 74);
+  }
+  .footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+  }
+  </style>
+  <!-- Footer css end here -->
+     <!-- Footer  -->
+     <footer class="footer-section">
+      <div class="container">
+          <div class="footer-cta pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <div class="cta-text">
+                              <h4>Find us</h4>
+                              <span>Jamshedpur</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="fas fa-phone"></i>
+                          <div class="cta-text">
+                              <h4>Call us</h4>
+                              <span>+91 7044556601</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="far fa-envelope-open"></i>
+                          <div class="cta-text">
+                              <h4>Mail us</h4>
+                              <span>snaphutcapturingmoments35@gmail.com</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-content pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-lg-4 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-logo">
+                              <a href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"  ></a>
+                          </div>
+                          <!-- <div class="footer-text">
+                              <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                              elit,Lorem ipsum dolor sit amet.</p>
+                          </div> -->
+                         
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Useful Links</h3>
+                          </div>
+                          <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">about</a></li>
+                              <li><a href="#">services</a></li>
+                              <li><a href="#">portfolio</a></li>
+                              <li><a href="#">Contact</a></li>
+                               <li><a href="#">About us</a></li>
+                             
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Follow Us</h3>
+                          </div>
+                          <div class="footer-social-icon">
+                            <!-- <span>Follow us</span> -->
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-instagram twitter-bg"></i></a>
+                          
+                        </div>
+                         
+                         
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright-area">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                      <div class="copyright-text">
+                          <p>Copyright &copy; 2021, All Right Reserved <a href="/">snaphutcapturingmoments</a></p>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                      <div class="footer-menu">
+                          <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Terms</a></li>
+                              <li><a href="#">Privacy</a></li>
+                              <li><a href="#">Policy</a></li>
+                              <li><a href="#">Contact</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+<!-- Footer end -->
+
+  <!-- .c-back-to-to css -->
+  <style type="text/css">
+    .c-back-to-top {
+        background-color: brown;
+      color: #eee;
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: .75rem;
+      line-height: 1;
+      opacity: 1;
+        padding: .5rem .75rem;
+      position: fixed;
+      bottom: .75rem;
+      right: .75rem;
+      transition: all .25s ease-in-out;
+      visibility: visible;
+      z-index: 1000;
+    }
+      @media screen and (min-width: 660px) {
+            .c-back-to-to{
+        bottom: 1.5rem;
+        right: 1.5rem;
+      }
+    
+      .c-back-to-to &:hover {
+          box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.15);
+      }
+    
+      .c-back-to-to &.is-hidden {
+        opacity: 0;
+        transition: all .25s ease-in-out;
+        visibility: hidden;
+      }
+    }
+    
+          </style>
+            <!-- /c-back-to-top -->
+          <div class="c-back-to-top is-hidden js-backToTop">Back to top &#8593;</div>
+          <!-- /c-back-to-top --> 
+
+<script type="text/javascript">
+	  $(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navbar').addClass('active');
+        } else {
+            $('.navbar').removeClass('active');
+        }
+    });
+});
+</script>
+<!-- preloader start here -->
+<script type="text/javascript">
+  var myVar;
+
+  function myFunction(){
+      myVar = setTimeout(hiding, 3000);
+      myVar = setTimeout(showPage,4000);
+  }
+  
+  function showPage(){
+      document.getElementById("preload").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+  }
+  
+  function hiding(){
+      document.getElementById("preload").style.animation = "fadeout 1s ease";
+      document.getElementById("myDiv").style.animation = "fadein 1s ease";
+  }
+</script>
+<!-- preloader end -->
+<script type="text/javascript">
+// Create an immediately invoked functional expression to wrap our code
+(function() {
+
+// Define our constructor
+this.BackToTop = function() {
+
+  // Create global element references
+  this.button = null;
+  this.lastScrollTop = 0;
+
+  // Define option defaults
+  var defaults = {
+      buttonSelector: ".back-to-top",
+      hiddenClass: "hidden",
+      screens: 4,
+      triggerOnUp: true
+  };
+
+  // Create options by extending defaults with the passed in arugments
+  if ( arguments[0] && typeof arguments[0] === "object" ) {
+      this.options = extendDefaults( defaults, arguments[0] );
+  }
+
+};
+
+
+// Public Methods
+
+BackToTop.prototype.init = function() {
+
+  // Define our button.
+  this.button = document.querySelector( this.options.buttonSelector );
+  
+  // Initialize our event listeners 
+  // while passing in the correct `this`
+  initializeEvents.call( this );
+
+};
+
+BackToTop.prototype.trackScroll = function() {
+
+  var scrolled = window.pageYOffset,
+      screenHeight = document.documentElement.clientHeight,
+      showButton = screenHeight * this.options.screens;
+  
+  if ( this.options.triggerOnUp ) {
+      
+      if ( scrolled < this.lastScrollTop ) {
+
+          if ( scrolled > showButton ) this.button.classList.remove( this.options.hiddenClass );
+
+          if ( scrolled < showButton ) this.button.classList.add( this.options.hiddenClass );
+
+      }
+
+      this.lastScrollTop = scrolled;
+      
+  } else {
+      
+      if ( scrolled > showButton ) this.button.classList.remove( this.options.hiddenClass );
+
+      if ( scrolled < showButton ) this.button.classList.add( this.options.hiddenClass );
+      
+  }
+  
+};
+
+
+// Private Methods
+
+function extendDefaults( source, properties ) {
+  var property;
+
+  for ( property in properties ) {
+      
+      if ( properties.hasOwnProperty( property ) ) source[property] = properties[property];
+      
+  }
+
+  return source;
+}
+
+function scrollToTop() {
+
+  if ( window.pageYOffset > 0 ) {
+
+      window.scrollBy( 0, -50 );
+      setTimeout( scrollToTop, 0 );
+
+  }
+
+}
+
+function initializeEvents() {
+  
+  window.addEventListener( "scroll", this.trackScroll.bind( this ) );
+  this.button.addEventListener( "click", scrollToTop );
+  
+}
+
+}());
+
+
+
+var backToTop = new BackToTop({
+buttonSelector: ".js-backToTop",
+hiddenClass: "is-hidden"
+});
+
+backToTop.init();
+</script>
+</body>
+<script src="js/slider.js"></script>
+</html>

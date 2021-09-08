@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snaphut Home</title> 
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="icon" type="image/png" href="images/logo.png"/> 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+ <!-- Font awesome  -->
+<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<!-- bootstrap link -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://kit.fontawesome.com/42a74ef145.js" crossorigin="anonymous"></script>
+
+ <!-- Bootstrap CSS -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+ <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet"> -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+ <script src="https://kit.fontawesome.com/771e8b35fe.js" crossorigin="anonymous"></script>
+
+	<style type="text/css">	
+
+*{
+  font-family: 'Lato', sans-serif;
+    font-size: 0.99em;
+}
+
+html{
+    overflow-x: hidden;
+}
+body{
+ background-image:url(images/background\ img.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+*:focus {
+    outline: none;
+}
+
+
+/*NavBar Starts*/
+   .navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: white;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: white;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #333;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #5777BA;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+	.com{
+    	color: #5777BA;
+    }
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+      background: rgba(0, 0, 0, 0.5);
+        color: #333;
+    }
+    .com{
+    	color: #418DC9;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+
+.navbar-toggler{
+	color:  #fff;
+}
+.navbar .nav-link {
+    color: #fff;
+    
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+.navbar.active .navbar-brand {
+    color: #333;
+}
+.navbar.active .navbar-toggler {
+    color: #333;
+}
+}
+.ser{
+  margin-top: -5px;
+}
+.drop .dropdown{
+  color: black;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-item{
+color: white;
+}
+/*NavBar Ends*/
+	</style>
+</head>
+
+<!-- preloader css start here -->
+<style type="text/css">
+
+  * {box-sizing: border-box;}
+  
+  @font-face {
+      font-family: Montserrat-Thin;
+      src: url(Montserrat-Thin.ttf);
+    }
+  .hello{
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      padding-top: 15%;
+  }
+  .wellcome{
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      font-weight: 800;
+      font-size: medium;
+  }
+  
+  body{
+      margin:0;
+      padding: 0;    
+  }
+  .preload{
+      width: 100%;
+      height: 100%;
+      background: rgb(255, 255, 255);
+      position: fixed;
+      top: 0;
+      padding-top: 90px;
+      left: 0;
+      z-index: 1;
+  }
+  
+  
+  .loader-frame{
+      width: 250px;
+      height: 250px;
+      margin: auto;
+      margin-top: 10%;
+      position: relative;
+  }
+  
+  .circle{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    background-color: white 0%;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .loader1{
+      position: absolute;
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      border-top: 5px solid rgb(70, 70, 70);
+      border-bottom: 5px solid rgb(80, 80, 80);
+      animation: clockwisespin 5s linear 3;
+  }
+  
+  @keyframes clockwisespin{
+      from{transform: rotate(0deg);}
+      to{transform: rotate(360deg);}
+  }
+  
+  
+  @keyframes fadeout{
+      from{opacity: 1;}
+      to{opacity: 0;}
+  }
+  @keyframes fadein{
+      from{opacity: 0;}
+      to{opacity: 1;}
+  }
+          </style>
+
+<body onload="myFunction()">
+    
+  <div class="preload" id="preload">
+      <div class="logo">
+      </div>
+      <div class="loader-frame">
+          <div class="loader1" id="loader1">
+          </div>
+          <div class="circle"></div>
+          <h1 class="hello">Wellcome to</h1>
+          <h5 class="wellcome">snaphutcapturingmoments</h5>
+      </div>
+  </div>
+
+
+<section style="background-color: #0077BD;">
+	<!-- Navbar -->
+ <header class="header ">
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container"><a href="index.html" class="navbar-brand text-uppercase font-weight-bold "><img src="images/logo1.jpg" alt="" height="50px" width="50px"></a>
+         <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse  ">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link text-uppercase ">Home <span class="sr-only"></span></a></li>
+                  
+                    <li class="nav-item active"><a href="About.html" class="nav-link text-uppercase ">About <span class="sr-only"></span></a></li>
+                  
+                  
+                    <div class="btn-group drop ">
+                      <li class=" ser btn dropdown-toggle nav-link text-uppercase  " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PHOTOGRAPHY
+                      </li>
+                      <div class="dropdown-menu dropdown">
+                        <a class="dropdown-item " href="services1.html">WEDDING PHOTOGRAPHY</a>
+                        <a class="dropdown-item " href="services2.html">PRE-WEDDING SHOOT</a>
+                        <a class="dropdown-item " href="services3.html">PORTFOLIO SHOOT</a>
+                        <a class="dropdown-item " href="services4.html">EVENT SHOOT</a>
+                        <a class="dropdown-item " href="services5.html">BABY SHOOT</a>
+                    </div>
+                    </div>
+
+                    <li class="nav-item active"><a href="Gallery.html" class="nav-link text-uppercase ">Services <span class="sr-only"></span></a></li>
+                  
+                  
+                    <li class="nav-item active"><a href="Films.html" class="nav-link text-uppercase ">Films <span class="sr-only"></span></a></li>
+                  
+                    <li class="nav-item active"><a href="contact.html" class="nav-link text-uppercase ">contact Us <span class="sr-only"></span></a></li>
+                  
+                </ul>
+            </div>
+        </div>
+    </nav> 
+ </header>  
+
+  <!-- Navbar -->
+
+</section>
+
+<style type="text/css">	
+/* slider css */
+body{
+  margin: 0;
+}
+
+h1{
+  color:#fff;
+}
+
+.bg-opacity{
+    position: relative;
+    background-color: #000;
+}
+
+.bg-opacity::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.5;
+    background:       url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center;
+    background-size: cover;
+}
+
+.content{
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.serve{
+   padding-top: 200px; 
+}
+.ind a{
+text-decoration: none;
+  color: rgb(245, 2, 2);
+}
+</style>
+
+<div class="bg-opacity">
+    <div class="content">
+      <h2 class="text-center text-white serve"><span class="ind"><a href="index.html">Home</a></span>\Pre-Wedding</h2>
+    </div>
+  </div>
+
+<br>
+<br>
+<style type="text/css">
+	.heading-below-header{
+		font-weight: 900;
+		color: #FFFFFF;
+
+	}
+
+	.section-below-header{
+		background-color: #202125;	
+		/*background-color: #F2F2F2;	*/
+
+	}
+	.text-below-header{
+		color: #FFFFFF;
+		/*color: #7d7d7d;*/
+		font-weight: 400
+	}
+</style>
+
+ <!-- Start services row -->
+ <figure class="text-center">
+  <h5 style="background-color:rgb(239, 74, 74) ; padding: 20px; margin-top: -48px; color: white; font-size: 1.8rem;"> PRE-WEDDING
+      PHOTOGRAPHY</h5>
+    </figure>
+
+ <div class="row align-items-center">
+  <div class="col-md-7 text-left">
+    
+      <h5 class="featurette-heading text-center" style="font-size: 2rem; padding-bottom: 40px;">OurPre-Wedding Photography  </h5> 
+       <h5 class="text-center">snaphutcapturingmoments Photography provides best wedding photography  for your weddings. In Country like India wedding Photography is a big event so wedding photographers are always in demand for service. Special events like wedding don't come every day in someone's life. It's a lifetime event for which everyone are excited.We cover every special momentnof your with an experience of covering  more than 1500+ events. We  take care of every creative aspect like emotions, sentiments, joy, laughter and rituals of every events.</h5>
+  </div><!-- end col -->
+  <div class="col-md-5 text-center">
+    <div class="right-box">
+      <img class="img-fluid" src="images/Prewedding/img2.jpg" alt="" />
+    </div>
+  </div><!-- end col -->
+</div><!-- end services row -->
+
+
+<!-- gallary css -->
+<style type="text/css">
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+   
+  /* Create four equal columns that sits next to each other */
+    .column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+  }
+   
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+.container.gallery-container {
+    background-color: black;
+    color: #35373a; 
+    /* min-height: 100vh;
+    padding: 30px 50px; */
+}
+  /* Responsive layout - makes a two column-layout instead of four columns */
+   @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+    } 
+     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+        }
+        .row1{
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+          }
+
+.gallery-con {
+    background-color: #fff;
+    color: black;
+    /* min-height: 100vh; */
+    /* padding: 10px 30px; */
+}
+
+.gallery-con h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-con p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: black;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row1 > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+  
+ /* Galleryend  */
+
+  
+</style>
+<!-- gallary css end -->
+<!-- gallery -->
+ 
+<div class=" gallery-con">
+
+  <h2 class="page-description text-center pt-5 "> Here is a wide collection of pictures</h2>
+  
+  <div class="tz-gallery">  
+
+  <div class="row1">
+  <div class="column">
+    <div class="col">
+     <a class="lightbox" href="images/Prewedding/img1.jpg"> 
+      <img src="images/Prewedding/img1.jpg" alt="Bridge">
+  </a>
+</div>
+<div class="col">
+<a class="lightbox" href="images/Prewedding/img13.jpg"> 
+  <img src="images/Prewedding/img13.jpg" alt="Bridge">
+</a>
+</div>
+<div class="col">
+  <a class="lightbox" href="images/Prewedding/img14.jpg"> 
+    <img src="images/Prewedding/img14.jpg" alt="Bridge">
+  </a>
+  </div>
+   
+  <div class="col">
+    <a class="lightbox" href="images/Prewedding/img18.jpg"> 
+      <img src="images/Prewedding/img18.jpg" alt="Bridge">
+    </a>
+    </div>
+    <div class="col">
+      <a class="lightbox" href=""> 
+        <img src="" alt="Bridge">
+      </a>
+      </div>
+    
+        <div class="col">
+          <a class="lightbox" href="img8.jpg"> 
+            <img src="img8.jpg" alt="Bridge">
+          </a>
+          </div>
+          <div class="col">
+            <a class="lightbox" href="img48.jpg">
+                <img src="img48.jpg" alt="Bridge">
+            </a>
+          </div>
+   
+   </div>
+  <div class="column">
+    <div class="col">
+      <a class="lightbox" href="images/Prewedding/img5.jpg"> 
+        <img src="images/Prewedding/img5.jpg" alt="Bridge">
+      </a>
+      </div>
+      <div class="col">
+        <a class="lightbox" href="images/Prewedding/img2.jpg"> 
+          <img src="images/Prewedding/img2.jpg" alt="Bridge">
+        </a>
+        </div>
+        <div class="col">
+          <a class="lightbox" href="images/Prewedding/img19.jpg"> 
+            <img src="images/Prewedding/img19.jpg" alt="Bridge">
+          </a>
+          </div>
+          <div class="col">
+            <a class="lightbox" href="images/Prewedding/img20.jpg"> 
+              <img src="images/Prewedding/img20.jpg" alt="Bridge">
+            </a>
+            </div>
+            <div class="col">
+              <a class="lightbox" href="img7.jpg"> 
+                <img src="img7.jpg" alt="Bridge">
+              </a>
+              </div>
+              <div class="col">
+                <a class="lightbox" href="img46.jpg"> 
+                  <img src="img46.jpg" alt="Bridge">
+                </a>
+                </div>
+                <div class="col">
+                  <a class="lightbox" href="img13.jpg">
+                      <img src="img13.jpg" alt="Bridge">
+                  </a>
+                </div>
+  </div>
+
+  </div>  
+  </div>
+
+</div>
+  <!-- gallery end  -->
+
+  <!-- buttun css style -->
+<style type="text/css">
+  .pushable{
+    background-color:rgb(239, 74, 74) ;
+    margin-bottom: 10px;
+    padding:5px 20px ;
+   
+    border: 2px solid rgb(239, 74, 74);
+    border-radius: 10px;
+    font-size: x-large;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  a:hover{
+    color: white;
+    text-decoration: none; 
+  }
+  </style>
+  <!-- buttun css style -->
+  <div class="section-title row text-center">
+    <div class="col-md-8 offset-md-2">
+       <button class="pushable">
+        <a link href= "#" id="btn">See More </a>
+      </button>
+    </div>
+  </div>
+
+<img src="images/ic_circles_gradient_reverse.png" width="200" style="position: absolute; margin-top: 80px; right: 0px; opacity: 0.1">
+
+<!-- Footer css start here -->
+<style type="text/css">
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .footer-section {
+  background: #151414;
+  position: relative;
+  }
+  .footer-cta {
+  border-bottom: 1px solid #373636;
+  }
+  .single-cta i {
+  color: rgb(239, 74, 74);
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+  }
+  .cta-text {
+  padding-left: 15px;
+  display: inline-block;
+  }
+  .cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  }
+  .cta-text span {
+  color: #757575;
+  font-size: 15px;
+  }
+  .footer-content {
+  position: relative;
+  z-index: 2;
+  }
+  .footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+  }
+  .footer-logo {
+  margin-bottom: 30px;
+  }
+  .footer-logo img {
+    max-width: 200px;
+  }
+  .footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+  }
+  .footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  }
+  .footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+  }
+  .footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  }
+  .facebook-bg{
+  background: #3B5998;
+  }
+  .twitter-bg{
+  background: #e42967;
+  }
+  
+  .footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+  }
+  .footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: rgb(239, 74, 74);
+  }
+  .footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+  }
+  .footer-widget ul li a:hover{
+  color: rgb(239, 74, 74);
+  }
+  .footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+  }
+  .subscribe-form {
+  position: relative;
+  overflow: hidden;
+  }
+  .subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+  }
+  .subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: rgb(239, 74, 74);
+    padding: 13px 20px;
+    border: 1px solid rgb(239, 74, 74);
+    top: 0;
+  }
+  .subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+  }
+  .copyright-area{
+  background: #202020;
+  padding: 25px 0;
+  }
+  .copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+  }
+  .copyright-text p a{
+  color: rgb(239, 74, 74);
+  }
+  .footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+  }
+  .footer-menu li:hover a{
+  color: rgb(239, 74, 74);
+  }
+  .footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+  }
+  </style>
+  <!-- Footer css end here -->
+     <!-- Footer  -->
+     <footer class="footer-section">
+      <div class="container">
+          <div class="footer-cta pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <div class="cta-text">
+                              <h4>Find us</h4>
+                              <span>Jamshedpur</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="fas fa-phone"></i>
+                          <div class="cta-text">
+                              <h4>Call us</h4>
+                              <span>+91 7044556601</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                          <i class="far fa-envelope-open"></i>
+                          <div class="cta-text">
+                              <h4>Mail us</h4>
+                              <span>snaphutcapturingmoments35@gmail.com</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-content pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-lg-4 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-logo">
+                              <a href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"  ></a>
+                          </div>
+                          <!-- <div class="footer-text">
+                              <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                              elit,Lorem ipsum dolor sit amet.</p>
+                          </div> -->
+                         
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Useful Links</h3>
+                          </div>
+                          <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">about</a></li>
+                              <li><a href="#">services</a></li>
+                              <li><a href="#">portfolio</a></li>
+                              <li><a href="#">Contact</a></li>
+                               <li><a href="#">About us</a></li>
+                             
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Follow Us</h3>
+                          </div>
+                          <div class="footer-social-icon">
+                            <!-- <span>Follow us</span> -->
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-instagram twitter-bg"></i></a>
+                        </div>
+                         
+                         
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright-area">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                      <div class="copyright-text">
+                          <p>Copyright &copy; 2021, All Right Reserved <a href="/">snaphutcapturingmoments</a></p>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                      <div class="footer-menu">
+                          <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Terms</a></li>
+                              <li><a href="#">Privacy</a></li>
+                              <li><a href="#">Policy</a></li>
+                              <li><a href="#">Contact</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+  <!-- Footer end -->
+
+   <!-- .c-back-to-to css -->
+   <style type="text/css">
+    .c-back-to-top {
+        background-color: brown;
+      color: #eee;
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: .75rem;
+      line-height: 1;
+      opacity: 1;
+        padding: .5rem .75rem;
+      position: fixed;
+      bottom: .75rem;
+      right: .75rem;
+      transition: all .25s ease-in-out;
+      visibility: visible;
+      z-index: 1000;
+    }
+      @media screen and (min-width: 660px) {
+            .c-back-to-to{
+        bottom: 1.5rem;
+        right: 1.5rem;
+      }
+    
+      .c-back-to-to &:hover {
+          box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.15);
+      }
+    
+      .c-back-to-to &.is-hidden {
+        opacity: 0;
+        transition: all .25s ease-in-out;
+        visibility: hidden;
+      }
+    }
+    
+          </style>
+            <!-- /c-back-to-top -->
+          <div class="c-back-to-top is-hidden js-backToTop">Back to top &#8593;</div>
+          <!-- /c-back-to-top --> 
+
+<script type="text/javascript">
+	  $(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navbar').addClass('active');
+        } else {
+            $('.navbar').removeClass('active');
+        }
+    });
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+<!-- preloader start here -->
+<script type="text/javascript">
+  var myVar;
+
+  function myFunction(){
+      myVar = setTimeout(hiding, 3000);
+      myVar = setTimeout(showPage,4000);
+  }
+  
+  function showPage(){
+      document.getElementById("preload").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+  }
+  
+  function hiding(){
+      document.getElementById("preload").style.animation = "fadeout 1s ease";
+      document.getElementById("myDiv").style.animation = "fadein 1s ease";
+  }
+</script>
+<!-- preloader end -->
+<script type="text/javascript">
+  // Create an immediately invoked functional expression to wrap our code
+  (function() {
+  
+  // Define our constructor
+  this.BackToTop = function() {
+  
+      // Create global element references
+      this.button = null;
+      this.lastScrollTop = 0;
+  
+      // Define option defaults
+      var defaults = {
+          buttonSelector: ".back-to-top",
+          hiddenClass: "hidden",
+          screens: 4,
+          triggerOnUp: true
+      };
+  
+      // Create options by extending defaults with the passed in arugments
+      if ( arguments[0] && typeof arguments[0] === "object" ) {
+          this.options = extendDefaults( defaults, arguments[0] );
+      }
+  
+  };
+  
+  
+  // Public Methods
+  
+  BackToTop.prototype.init = function() {
+  
+      // Define our button.
+      this.button = document.querySelector( this.options.buttonSelector );
+      
+      // Initialize our event listeners 
+      // while passing in the correct `this`
+      initializeEvents.call( this );
+  
+  };
+  
+  BackToTop.prototype.trackScroll = function() {
+  
+      var scrolled = window.pageYOffset,
+          screenHeight = document.documentElement.clientHeight,
+          showButton = screenHeight * this.options.screens;
+      
+      if ( this.options.triggerOnUp ) {
+          
+          if ( scrolled < this.lastScrollTop ) {
+  
+              if ( scrolled > showButton ) this.button.classList.remove( this.options.hiddenClass );
+  
+              if ( scrolled < showButton ) this.button.classList.add( this.options.hiddenClass );
+  
+          }
+  
+          this.lastScrollTop = scrolled;
+          
+      } else {
+          
+          if ( scrolled > showButton ) this.button.classList.remove( this.options.hiddenClass );
+  
+          if ( scrolled < showButton ) this.button.classList.add( this.options.hiddenClass );
+          
+      }
+      
+  };
+  
+  
+  // Private Methods
+  
+  function extendDefaults( source, properties ) {
+      var property;
+  
+      for ( property in properties ) {
+          
+          if ( properties.hasOwnProperty( property ) ) source[property] = properties[property];
+          
+      }
+  
+      return source;
+  }
+  
+  function scrollToTop() {
+  
+      if ( window.pageYOffset > 0 ) {
+  
+          window.scrollBy( 0, -50 );
+          setTimeout( scrollToTop, 0 );
+  
+      }
+  
+  }
+  
+  function initializeEvents() {
+      
+      window.addEventListener( "scroll", this.trackScroll.bind( this ) );
+      this.button.addEventListener( "click", scrollToTop );
+      
+  }
+  
+  }());
+  
+  
+  
+  var backToTop = new BackToTop({
+  buttonSelector: ".js-backToTop",
+  hiddenClass: "is-hidden"
+  });
+  
+  backToTop.init();
+  </script>
+</body>
+<script src="js/slider.js"></script>
+</html>

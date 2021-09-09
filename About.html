@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Snaphut Home</title> 
+	<title>snaphutcapturingmoments About</title> 
 
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -14,11 +14,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-
-<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> -->
 
  <!-- Font awesome  -->
 <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -42,6 +37,8 @@
 *{
   font-family: 'Lato', sans-serif;
     font-size: 0.99em;
+    margin: 0;
+    padding: 0;
 }
 
 html{
@@ -115,9 +112,9 @@ body{
     .navbar .navbar-brand, .navbar .nav-link {
         color: #555;
     }
-    .slider{
+    /* .slider{
   margin-top: 60px;
-}
+} */
 .navbar-toggler{
 	color:  #fff;
 }
@@ -169,13 +166,15 @@ color: white;
     .hello{
         font-family: 'Montserrat', sans-serif;
         text-align: center;
-        padding-top: 15%;
+        padding-top: 19%;
+        color: #151414;
     }
     .wellcome{
         font-family: 'Montserrat', sans-serif;
         text-align: center;
         font-weight: 800;
         font-size: medium;
+        
     }
     
     body{
@@ -247,7 +246,7 @@ color: white;
           <div class="loader1" id="loader1">
           </div>
           <div class="circle"></div>
-          <h1 class="hello">Wellcome to</h1>
+          <h2 class="hello">Welcome to</h2>
           <h5 class="wellcome">snaphutcapturingmoments</h5>
       </div>
   </div>
@@ -374,69 +373,201 @@ text-decoration: none;
 
  <!-- About Us end -->
 
+ <!-- photographer css start here -->
+ <style type="text/css">
+ /* Design */
+ *,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+ }
+ 
+ html {
+   background-color: #ecf9ff;
+ }
+ 
+ body {
+   color: #272727;
+   font-family: 'Quicksand', serif;
+   font-style: normal;
+   font-weight: 400;
+   letter-spacing: 0;
+   padding: 1rem;
+ }
+ 
+ .main{
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ 
+ h1 {
+     font-size: 24px;
+     font-weight: 400;
+     text-align: center;
+ }
+ 
+ img {
+   height: auto;
+   max-width: 100%;
+   vertical-align: middle;
+ }
+ 
+ .butn {
+   color: #ffffff;
+   padding: 0.8rem;
+   font-size: 14px;
+   text-transform: uppercase;
+   border-radius: 4px;
+   font-weight: 400;
+   display: block;
+   width: 100%;
+   cursor: pointer;
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   background: transparent;
+ }
+ 
+ .butn:hover {
+   background-color: rgba(255, 255, 255, 0.12);
+ }
+ 
+ .cards {
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .cards_item {
+   display: flex;
+   padding: 1rem;
+ }
+ 
+ @media (min-width: 40rem) {
+   .cards_item {
+     width: 50%;
+   }
+ }
+ 
+ @media (min-width: 56rem) {
+   .cards_item {
+     width: 33.3333%;
+   }
+ }
+ 
+ .card {
+   background-color: white;
+   border-radius: 0.25rem;
+   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+ }
+ 
+ .card_content {
+   padding: 1rem;
+   background: linear-gradient(to bottom left, #f0334c 40%, #FFC39E 100%);
+ }
+ 
+ .card_title {
+   color: #ffffff;
+   font-size: 1.1rem;
+   font-weight: 700;
+   letter-spacing: 1px;
+   text-transform: capitalize;
+   margin: 0px;
+ }
+ 
+ .card_text {
+   color: #ffffff;
+   font-size: 0.875rem;
+   line-height: 1.5;
+   margin-bottom: 1.25rem;    
+   font-weight: 400;
+ }
+ .made_by{
+   font-weight: 400;
+   font-size: 13px;
+   margin-top: 35px;
+   text-align: center;
+ }
+</style>
+ <!-- photographer css end here -->
+
 <!-- photographer cards -->
-
-<div class="album py-5 bg-light mt-5">
-  <section class=" text-center">
-    <div class="container">
-        <div class="heading text-black">
-           Our Photographers
-        </div>
-      </div>
-  </section>
+ 
+<section class=" text-center" style="padding-bottom: -10px;">
   <div class="container">
-
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-      <div class="col">
-        <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-              
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-              
-              </div>
-            
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-          
-              </div>
-        
-            </div>
-          </div>
-        </div>
+      <div class="heading text-black pt-5">
+         Our Photographers
       </div>
     </div>
+</section>
+  <div class="main">
+    <ul class="cards">
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+          <div class="card_content">
+            <h2 class="card_title">Card Grid Layout</h2>
+            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+            <button class="butn card_btn">Follow</button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+          <div class="card_content">
+            <h2 class="card_title">Card Grid Layout</h2>
+            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+            <button class="butn card_btn">Follow</button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+          <div class="card_content">
+            <h2 class="card_title">Card Grid Layout</h2>
+            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+            <button class="butn card_btn">Follow</button>
+          </div>
+        </div>
+      </li>
+      <!-- <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
+          <div class="card_content">
+            <h2 class="card_title">Card Grid Layout</h2>
+            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+            <button class="btn card_btn">Read More</button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
+          <div class="card_content">
+            <h2 class="card_title">Card Grid Layout</h2>
+            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+            <button class="btn card_btn">Read More</button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
+          <div class="card_content">
+            <h2 class="card_title">Card Grid Layout</h2>
+            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+            <button class="btn card_btn">Read More</button>
+          </div>
+        </div>
+      </li> -->
+    </ul>
   </div>
-</div>
+  
 <!-- photographer cards end -->
 
 
@@ -998,11 +1129,12 @@ text-decoration: none;
                   <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                       <div class="footer-menu">
                           <ul>
-                              <li><a href="#">Home</a></li>
-                              <li><a href="#">Terms</a></li>
-                              <li><a href="#">Privacy</a></li>
-                              <li><a href="#">Policy</a></li>
-                              <li><a href="#">Contact</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="About.html">about</a></li>
+                            <li><a href="services.html">Photography</a></li>
+                            <li><a href="Gallery.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                           
                           </ul>
                       </div>
                   </div>
